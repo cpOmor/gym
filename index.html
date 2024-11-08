@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>GYM </title>
+</head>
+
+<body>
+    <!-- start navbar  -->
+    <nav class=" my-4 absolute top-0 w-full">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="logo text-white">
+                GYM<span class="!text-yellow-400">24</span>
+            </a>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Links -->
+            <div id="menu" class="hidden md:flex space-x-4">
+                <a href="#" class="text-white  hover:text-blue-200">Advantages</a>
+                <a href="#" class="text-white hover:text-blue-200">Membership</a>
+                <a href="#" class="text-white hover:text-blue-200">About</a>
+                <a href="#" class="text-white hover:text-blue-200">Trainers</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar  -->
+
+
+    <!-- start hero section  -->
+    <section class="container overflow-hidden">
+        <div class="flex justify-between h-full items-center">
+            <div class="flex flex-row !w-3/5">
+                <div>
+                    <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                        Free trial session with a trainer
+                    </h1>
+                    <button class="mt-6">Detailed</button>
+                </div>
+            </div>
+            
+            <div class="!w-2/5 relative">
+                <div class="!z-[100] absolute "
+                    style="height: 100vh; width: 300px;  right: 0 !important; background: linear-gradient(180deg, rgba(39, 3, 3, 0) 99.96%, #000 72.25%);">
+                </div>
+
+                <div class="!z-[100] absolute bg-red-500"
+                    style="height: 100vh; width: 300px; background: linear-gradient(90deg, #000 50.49%, rgba(0, 0, 0, 0.00) 90.96%);">
+                </div>
+                <img src="./assit/unsplash.png" alt="">
+
+                <div class="!z-[100] absolute "
+                    style="height: 300px; width: 100%; bottom: 0; background: linear-gradient(0deg, #000 50.49%, rgba(0, 0, 0, 0.00) 90.96%);">
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- end hero section  -->
+
+    <!-- Reasons section start -->
+    <section class="container">
+
+        <h2>Reasons to join</h2>
+        <div>
+            <div class="flex gap-10 justify-between mt-20">
+                <div>
+                    <div class="flex gap-2 max-w-86" style="max-width: 400px;">
+                        <img src="./assit/icon_line.png" alt="">
+
+
+                        <div class="">
+                            <h6>15000 sq.m.</h6>
+                            <p class="mt-1">A spacious gym for sports – a safe distance between exercise machines</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-2 items-start" style="max-width: 400px;">
+                        <img src="./assit/icon_ eqipment.png" alt="">
+
+
+
+                        <div class="">
+                            <h6>More than 200 equipment</h6>
+                            <p class="mt-1">No queues at the simulators. Premium equipment from LifeStyle, Hammer
+                                Strength,
+                                TechnoGym.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex gap-10 justify-between mt-16">
+                <div>
+                    <div class="flex gap-2 max-w-86" style="max-width: 400px;">
+                        <img src="./assit/icon_ fitness zones.png" alt="">
+
+                        <div class="">
+                            <h6>4 fitness zones</h6>
+                            <p class="mt-1">From cardio to functional and cycle. Separate area for boxing and mixed
+                                martial arts</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-2 items-start" style="max-width: 400px;">
+                        <img src="./assit/icon_time.png" alt="">
+
+
+
+                        <div class="">
+                            <h6>Round-the-clock operation</h6>
+                            <p class="mt-1">The gym is open 24 hours a day, also works on all holidays and weekends</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Reasons section end -->
+
+    <!-- Gym membership section start  -->
+    <section class="container " style="margin-top: 180px;">
+        <h2 class="text-center">Gym membership</h2>
+
+        <div class="grid grid-cols-3 gap-10 mt-20">
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘Trial’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 0 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Access to the gym from 8:00 to 14:00 </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>The trainer on duty will introduce you to the gym </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘Easy Start’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 119 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Visit without restrictions 24/7 </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Individual training program </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Access to the VTRAINER application </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Trainer support </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘Free Time’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 49 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>The entrance time to the gym is from 14:00 to 16:00 </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Without suspension of gym membership </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>The trainer on duty will introduce you to the gym</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘1 Month 24/7’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 85 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Visit without restrictions 24/7 </p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>The trainer on duty will introduce you to the gym</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘In Shape (AM)’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 165 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Training in mini-groups until 14:00</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Without suspension of gym membership</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Classes with a trainer in a mini-group 3 times a week</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Trainer support</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="p-5">
+                        <h6 class="font-bold text-center">Pass ‘In Shape (PM)’ </h6>
+                        <h5 class="font-bold text-center mt-3">$ 195 </h5>
+                    </div>
+                    <div class="bg-black w-full h-1"></div>
+                    <div class="p-5 flex flex-col gap-3">
+                        <div class="flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Training in mini-groups until 17:00</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Without suspension of gym membership</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Classes with a trainer in a mini-group 3 times a week</p>
+                        </div>
+                        <div class=" flex items-center gap-2">
+                            <img src="./assit/material-symbols_check-circle-outline-rounded.png" class="h-6 w-6" alt="">
+                            <p>Trainer support</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+
+                    <button class="mt-6 py-2 mb-5">BY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gym membership section start  -->
+
+
+    <!-- About us section start -->
+    <section class="container " style="margin-top: 100px;">
+
+        <div class="flex gap-10">
+            <div class="w-1/2">
+
+
+
+
+                <h2>About us</h2>
+                <p style="padding-top: 65px;">
+                    Gym24 is a leading fitness center located near Grushevka metro station, offering over 1500 sq. m of
+                    space
+                    dedicated to top-of-the-line workout equipment from leading brands such as Hammer Strength, Life
+                    Fitness,
+                    and TechnoGym.
+                </p>
+                <p style="padding-top: 25px;">
+                    With affordable membership options, Gym24 is accessible to everyone who wants to reach their fitness
+                    goals,
+                    whether it's building strength, increasing endurance, or losing weight.
+                </p>
+                <p style="padding-top: 25px;">
+                    Certified trainers at Gym24 provide expert guidance and support to develop personalized workout
+                    plans
+                    tailored to each individual's needs and goals.
+                </p>
+            </div>
+            <div class="w-1/2">
+                <img src="./assit/photo.png" alt="">
+                <div class="flex justify-between items-center" style="margin-top: 6px;">
+                    <div class="flex gap-3">
+                        <div class="w-10 h-1 bg-yellow-400 rounded-lg cursor-pointer"></div>
+                        <div class="w-10 h-1 bg-white  rounded-lg cursor-pointer"></div>
+                        <div class="w-10 h-1 bg-white  rounded-lg cursor-pointer"></div>
+                        <div class="w-10 h-1 bg-white  rounded-lg cursor-pointer"></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="arrow 1">
+                                <path id="Vector"
+                                    d="M10.7 17.275C10.9 17.075 10.996 16.8334 10.988 16.55C10.9793 16.2667 10.875 16.025 10.675 15.825L7.85 13H19C19.2833 13 19.521 12.904 19.713 12.712C19.9043 12.5207 20 12.2834 20 12C20 11.7167 19.9043 11.479 19.713 11.287C19.521 11.0957 19.2833 11 19 11H7.85L10.7 8.15005C10.9 7.95005 11 7.71238 11 7.43705C11 7.16238 10.9 6.92505 10.7 6.72505C10.5 6.52505 10.2623 6.42505 9.987 6.42505C9.71233 6.42505 9.475 6.52505 9.275 6.72505L4.7 11.3C4.6 11.4 4.529 11.5084 4.487 11.625C4.44567 11.7417 4.425 11.8667 4.425 12C4.425 12.1334 4.44567 12.2584 4.487 12.375C4.529 12.4917 4.6 12.6 4.7 12.7L9.3 17.3C9.48333 17.4834 9.71233 17.575 9.987 17.575C10.2623 17.575 10.5 17.475 10.7 17.275Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="arrow 2">
+                                <path id="Vector"
+                                    d="M13.3 17.275C13.1 17.075 13.004 16.8334 13.012 16.55C13.0207 16.2667 13.125 16.025 13.325 15.825L16.15 13H5C4.71667 13 4.479 12.904 4.287 12.712C4.09567 12.5207 4 12.2834 4 12C4 11.7167 4.09567 11.479 4.287 11.287C4.479 11.0957 4.71667 11 5 11H16.15L13.3 8.15005C13.1 7.95005 13 7.71238 13 7.43705C13 7.16238 13.1 6.92505 13.3 6.72505C13.5 6.52505 13.7377 6.42505 14.013 6.42505C14.2877 6.42505 14.525 6.52505 14.725 6.72505L19.3 11.3C19.4 11.4 19.471 11.5084 19.513 11.625C19.5543 11.7417 19.575 11.8667 19.575 12C19.575 12.1334 19.5543 12.2584 19.513 12.375C19.471 12.4917 19.4 12.6 19.3 12.7L14.7 17.3C14.5167 17.4834 14.2877 17.575 14.013 17.575C13.7377 17.575 13.5 17.475 13.3 17.275Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About us section end  -->
+
+    <!-- Trainers staff section start -->
+    <section class="container " style="margin-top: 140px;">
+        <h2 class="text-center">Trainers staff</h2>
+        <div style="margin-top: 80px;">
+            <div class="grid grid-cols-4 gap-5">
+
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (1).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Victoria Shurpik</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (2).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Elizabeth Lavrinenko</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (3).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Ivan Gladkikh</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (4).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Lyudmila Sabilo</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (5).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Evgeny Gurkov</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (6).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Anatoly Prytytsky</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (7).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Victor Ludkovich</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card" style="border-radius: 20px;">
+                    <div style="padding: 19px;">
+                        <img class="w-full" src="./assit/photo (8).png" alt="">
+                    </div>
+
+                    <h3 class="text-center text-white">Maria Masyak</h3>
+                    <div class="flex justify-center gap-2 mt-2 mb-4">
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_inst.png" alt="">
+                        </div>
+
+
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_twitter.png" alt="">
+                        </div>
+                        <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                            style="width: 34px ; height: 34px ;">
+                            <img src="./assit/./icon_youtube.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainers staff section end -->
+
+
+    <!-- footer start  -->
+    <footer class="container " style="margin-top: 120px;">
+        <div class="flex justify-between">
+            <div class="w-1/3">
+                <a href="#" class="logo text-white">
+                    GYM<span class="!text-yellow-400">24</span>
+                </a>
+                <p class="mt-6">
+                    Build strength and confidence at our gym with state-of-the-art equipment, personalized training, and
+                    a motivating community
+                </p>
+            </div>
+
+
+            <div>
+                <h6>
+                    Address
+                </h6>
+                <div class="mt-6">
+                    <p>Republic of Belarus</p>
+                <p>Minsk city</p>
+                <p>Dzerzhinsky Avenue 15</p>
+                </div>
+            </div>
+            <div>
+                <h6>
+                    Contact
+                </h6>
+                <div class="flex mt-6 gap-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:call">
+                            <path id="Vector"
+                                d="M4.6424 6.57233C4.40365 4.99983 5.5124 3.58733 7.20615 3.06983C7.50672 2.97793 7.83102 3.00409 8.11297 3.14298C8.39492 3.28186 8.61331 3.52303 8.72365 3.81733L9.2674 5.26733C9.35493 5.5006 9.37076 5.7547 9.31285 5.99702C9.25494 6.23935 9.12594 6.45884 8.9424 6.62733L7.3249 8.10858C7.24517 8.18174 7.18576 8.27432 7.15246 8.37728C7.11916 8.48025 7.11311 8.59008 7.1349 8.69608L7.1499 8.76108L7.18865 8.92358C7.3898 9.71314 7.69631 10.472 8.0999 11.1798C8.53954 11.932 9.08513 12.6169 9.7199 13.2136L9.7699 13.2586C9.85065 13.3303 9.94859 13.3798 10.0542 13.4024C10.1598 13.4249 10.2694 13.4197 10.3724 13.3873L12.4636 12.7286C12.7013 12.654 12.9559 12.6521 13.1946 12.7231C13.4334 12.7941 13.6454 12.9349 13.8036 13.1273L14.7936 14.3286C15.2061 14.8286 15.1561 15.5636 14.6824 16.0048C13.3861 17.2136 11.6036 17.4611 10.3636 16.4648C8.84368 15.2388 7.56234 13.7435 6.58365 12.0536C5.59701 10.365 4.93922 8.50537 4.6424 6.57233ZM8.44615 8.77858L9.78615 7.54858C10.1534 7.21175 10.4117 6.77283 10.5277 6.28817C10.6438 5.80351 10.6123 5.29523 10.4374 4.82858L9.8949 3.37858C9.67283 2.78639 9.23331 2.30115 8.66592 2.02175C8.09852 1.74235 7.44594 1.68981 6.84115 1.87483C4.7374 2.51858 3.04865 4.40483 3.40615 6.76108C3.65615 8.40608 4.2324 10.4986 5.50365 12.6836C6.55954 14.5057 7.94172 16.118 9.58115 17.4398C11.4411 18.9336 13.9236 18.4236 15.5361 16.9211C15.9975 16.4915 16.2776 15.902 16.3192 15.2729C16.3608 14.6439 16.1607 14.0227 15.7599 13.5361L14.7699 12.3336C14.4532 11.9492 14.0289 11.6681 13.5514 11.5265C13.0739 11.3848 12.565 11.3891 12.0899 11.5386L10.3536 12.0848C9.90536 11.6226 9.51269 11.1095 9.18365 10.5561C8.8658 9.99653 8.6181 9.39995 8.44615 8.77983V8.77858Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                    <p>+375(44)-777-24-12</p>
+                </div>
+                <div class="flex  gap-1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="icon:email">
+                            <path id="Vector"
+                                d="M18.3334 5.00016C18.3334 4.0835 17.5834 3.3335 16.6667 3.3335H3.33341C2.41675 3.3335 1.66675 4.0835 1.66675 5.00016V15.0002C1.66675 15.9168 2.41675 16.6668 3.33341 16.6668H16.6667C17.5834 16.6668 18.3334 15.9168 18.3334 15.0002V5.00016ZM16.6667 5.00016L10.0001 9.16683L3.33341 5.00016H16.6667ZM16.6667 15.0002H3.33341V6.66683L10.0001 10.8335L16.6667 6.66683V15.0002Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                    <p>gym24@gmail.com</p>
+                </div>
+                <div class="flex gap-2 mt-2 mb-4">
+                    <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                        style="width: 34px ; height: 34px ;">
+                        <img src="./assit/./icon_inst.png" alt="">
+                    </div>
+                    <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                        style="width: 34px ; height: 34px ;">
+                        <img src="./assit/./icon_facebook.png" alt="">
+                    </div>
+
+
+                    <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                        style="width: 34px ; height: 34px ;">
+                        <img src="./assit/./icon_twitter.png" alt="">
+                    </div>
+                    <div class="border flex justify-center items-center border-3  rounded-full p-2"
+                        style="width: 34px ; height: 34px ;">
+                        <img src="./assit/./icon_youtube.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- footer end  -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("/fonts/MADEOuterSans-Regular.woff2") format("woff2"),
+    url("/fonts/MADEOuterSans-Regular.woff") format("woff"),
+    url("/fonts/MADEOuterSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MADE Outer Sans";
+  src: url("/fonts/MADEOuterSans-Bold.woff2") format("woff2"),
+    url("/fonts/MADEOuterSans-Bold.woff") format("woff"),
+    url("/fonts/MADEOuterSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+:root {
+  /* Colors */
+  --primary-bg: #000;
+  --secondary-bg: #222;
+  --primary-color: #ffffff;
+  --secondary-color: #faff00;
+
+  /* Font Family */
+  --font-sans: "MADE Outer Sans", sans-serif;
+
+  /* Font Sizes */
+  --font-size-h1: 64px;
+  --font-size-h2: 48px;
+  --font-size-h3: 18px;
+  --font-size-h6: 18px;
+  --font-size-p: 14px;
+  --font-size-h1-sm: 40px;
+  --font-size-h2-sm: 28px;
+
+  /* Line Heights */
+  --line-height-h1: normal;
+  --line-height-h2: normal;
+  --line-height-h6: normal;
+  --line-height-p: 1.617;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+body {
+  background: var(--primary-bg);
+}
+
+.container {
+  max-width: 1100px !important;
+  padding: 0 12px;
+  /* border: solid red 1px; */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
+  font-family: var(--font-sans);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color);
+  font-family: var(--font-sans);
+}
+
+
+h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+    font-family: var(--font-sans);
+  }
+  
+
+h5 {
+  color: #fff;
+  text-align: center;
+  font-family: "MADE Outer Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+  line-height: var(--line-height-h6);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  font-family: var(--font-sans);
+}
+
+p {
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-p);
+  font-weight: var(--font-weight-light);
+  color: var(--primary-color);
+  font-family: var(--font-sans);
+}
+
+.logo {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#menu a {
+  font-family: "MADE Outer Sans", sans-serif;
+  z-index: 999 !important;
+}
+
+button {
+  display: flex;
+  padding: 16px 51px 16px 50px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: "MADE Outer Sans", sans-serif;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #faff00 0%, #fff700 100%);
+}
+
+
+.card {
+  border-radius: 10px;
+  background: #222;
+  
+}
